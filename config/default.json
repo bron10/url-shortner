@@ -1,0 +1,10 @@
+{
+  "PORT" : 3000,
+  "serviceURL" : "http://localhost:3000/",
+  "errors" : {
+    "notfound" : {
+      "code" : 404,
+      "message" : "Entity not found"
+    }
+  }
+}

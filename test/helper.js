@@ -6,11 +6,11 @@
 const Fastify = require('fastify')
 const fp = require('fastify-plugin')
 const App = require('../app')
-
+const dataConfig = require('config')
 // Fill in this config with all the configurations
 // needed for testing the application
 function config () {
-  return {}
+  return dataConfig || {}
 }
 
 // automatically build and tear down our instance
