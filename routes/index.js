@@ -15,14 +15,14 @@ module.exports = async function (fastify, opts) {
   fastify.get('/:token', getUrlCtrl)
 
   /**
-   * @api {get} /:token Request redirection to actual url
-   * @apiName getUrlCtrl
+   * @api {post} /anonymous/create Create shortlink request as anonymous user
+   * @apiName post
    * @apiGroup URL
    *
-   * @apiParam {token} the shorten token for actual url
+   * @apiBody {url} The long url that needs to shorten
    *
-   * @apiSuccess (302) {HTML} Redirected url response as HTML.
-   * @apiError (404) {HTML} Relative redirection not found
+   * @apiSuccess (200) {JSON} {shortUrl : "http://localhost:3000/Token"}
+   * @apiError (500) {JSON} Something went wrong
    */
    fastify.post('/:user/create', createUrlCtrl)
 }
