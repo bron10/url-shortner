@@ -5,6 +5,10 @@
     "notfound" : {
       "code" : 404,
       "message" : "Entity not found"
+    },
+    "serverError" : {
+      "code" : 500,
+      "message" : "SomeThing went wrong"
     }
   }
 }
