@@ -1,3 +1,5 @@
+[Feature]
+ - Feature of redis implementation in code pairing is present in link [PR-1](https://github.com/bron10/url-shortner/pull/1)  
 
 ## Simple url shortner service
 It generates short-code on bases of keys. The range of keys is provided to each server.Using fastify framework for performance and maintainability.   
