@@ -57,12 +57,12 @@ test('TC:4 failure check for /:token', async (t) => {
 test('TC:5 long url tests', async (t) => {
   const app = build(t)
 
-  const response2 = await app.inject({
+  const response = await app.inject({
     method: 'POST',
     body : {
       url : 'https://www.google.com/search?q=news+of+the+week&ei=P3cCYaOnIsXgrQHKjqewDA&oq=news+of+the+week&gs_lcp=Cgdnd3Mtd2l6EAMyCAguEIAEEJMCMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQguEIAEMgUIABCABDIFCC4QgAQyBQgAEIAEOgcIABBHELADOggIABCABBCwAzoKCC4QsAMQyAMQQzoQCC4QxwEQ0QMQsAMQyAMQQzoICAAQgAQQyQM6BQgAEJIDOgsIABCABBCxAxCDAToICAAQsQMQgwE6CAgAEIAEELEDSgUIPBIBMUoECEEYAFCZeli4gwFg6YUBaAFwAngBgAHxAogBhgySAQcwLjkuMC4xmAEAoAEByAENwAEB&sclient=gws-wiz&ved=0ahUKEwjjwtaA_ofyAhVFcCsKHUrHCcYQ4dUDCA8&uact=5'
     },
     url: '/anonymous/create'
   })
-  t.equal(JSON.parse(response1.statusCode), 200)
+  t.equal(JSON.parse(response.statusCode), 200)
 })
