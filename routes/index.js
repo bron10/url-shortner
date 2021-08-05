@@ -1,6 +1,7 @@
 'use strict'
 const {getUrlCtrl, createUrlCtrl} = require('../controllers/url.ctrl') 
 
+
 module.exports = async function (fastify, opts) {
   /**
    * @api {get} /:token Request redirection to actual url

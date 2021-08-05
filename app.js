@@ -4,6 +4,7 @@ const path = require('path')
 const AutoLoad = require('fastify-autoload')
 
 module.exports = async function (fastify, opts) {
+  fastify.register(require('fastify-redis'), { host: '127.0.0.1' })
   // Place here your custom code!
 
   // Do not touch the following lines
