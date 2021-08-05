@@ -1,7 +1,7 @@
 const range = {
-    min : 0,
+    min : 1000,
     max : 9999,
-    current : 0
+    current : 1000
 }
 let initKey  = range.min;
 
