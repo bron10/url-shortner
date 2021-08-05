@@ -1,5 +1,5 @@
 #From
-FROM node:10.23.0-slim
+FROM node:14-alpine3.14
 
 # set working directory
 WORKDIR /usr/src/app
